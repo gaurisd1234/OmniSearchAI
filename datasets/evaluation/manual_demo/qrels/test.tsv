@@ -1,0 +1,5 @@
+query-id	corpus-id	score
+q_python	doc_python	2
+q_python	doc_retrieval	1
+q_cuda	doc_gpu	2
+q_metrics	doc_retrieval	2

@@ -1,0 +1,3 @@
+{"document_id":"doc-bm25","metadata":{"topic":"lexical"},"page_number":1,"source":"bm25_notes.txt","text":"BM25 is a probabilistic ranking function that scores documents using query term frequency and inverse document frequency."}
+{"document_id":"doc-semantic","metadata":{"topic":"semantic"},"page_number":2,"source":"semantic_search.txt","text":"Dense semantic retrieval embeds sentences as vectors and finds passages with similar meanings."}
+{"document_id":"doc-gpu","metadata":{"topic":"hardware"},"page_number":3,"source":"cuda_notes.txt","text":"CUDA runs tensor computations on NVIDIA graphics hardware and accelerates neural model inference."}

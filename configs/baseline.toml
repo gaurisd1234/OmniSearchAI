@@ -1,0 +1,69 @@
+# Reproducible defaults for a small retrieval experiment. Record dataset
+# provenance and any model revision alongside each experiment run.
+[omnisearch]
+seed = 42
+log_level = "INFO"
+data_dir = "datasets"
+device = "auto"
+
+[ingestion]
+chunk_size = 1000
+chunk_overlap = 100
+
+[embeddings]
+model = "sentence-transformers/all-MiniLM-L6-v2"
+cuda_batch_size = 8
+cpu_batch_size = 32
+max_seq_length = 256
+normalize = true
+
+[vector_store]
+path = "vector_store/chroma"
+collection = "omnisearch_chunks"
+
+[retrieval]
+top_k = 5
+bm25_k1 = 1.5
+bm25_b = 0.75
+rrf_k = 60
+rrf_candidate_k = 20
+bm25_rrf_weight = 1.0
+dense_rrf_weight = 1.0
+cross_encoder_model = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+cross_encoder_batch_size = 8
+
+[llm]
+provider = "ollama"
+ollama_base_url = "http://localhost:11434"
+ollama_model = "qwen2.5:3b-instruct-q4_K_M"
+timeout_seconds = 120
+context_window = 4096
+max_tokens = 512
+temperature = 0.1
+
+[rag]
+max_context_chars = 12000
+max_context_chunks = 8
+
+[multimodal]
+clip_model = "openai/clip-vit-base-patch32"
+cuda_batch_size = 2
+cpu_batch_size = 4
+image_collection = "omnisearch_images"
+
+[generative_retrieval]
+model = "google/flan-t5-small"
+epochs = 3
+batch_size = 1
+gradient_accumulation = 8
+learning_rate = 0.00005
+max_input_tokens = 256
+max_output_tokens = 4
+validation_fraction = 0.2
+beam_candidates = 20
+
+[experiment]
+name = "baseline-retrieval"
+method = "bm25"
+dataset = ""
+split = "test"

@@ -1,0 +1,11 @@
+{
+  "name": "omnisearch-manual-demo",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "source_url": "local://datasets/evaluation/manual_demo",
+  "citation": "OmniSearch AI project-authored synthetic evaluation set, version 1.0.0",
+  "split": "test",
+  "modality": "text",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "notes": "Original synthetic text authored for framework tests; judgments manually assigned. Not a benchmark of retrieval quality."
+}

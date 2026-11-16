@@ -1,0 +1,32 @@
+# Template values only. The runner receives these values from the experiment
+# script and records the resolved configuration in experiment_report.json.
+seed = 42
+k = 10
+repeats = 3
+warmup = true
+dataset = "datasets/evaluation/manual_demo"
+split = "test"
+
+[methods.bm25]
+enabled = true
+id_field = "document_id"
+
+[methods.dense]
+enabled = true
+model = "sentence-transformers/all-MiniLM-L6-v2"
+id_field = "document_id"
+
+[methods.hybrid]
+enabled = true
+fusion = "reciprocal_rank_fusion"
+id_field = "document_id"
+
+[methods.generative]
+enabled = true
+id_field = "document_id"
+model = "google/flan-t5-small"
+
+[methods.multimodal]
+enabled = true
+id_field = "image_id"
+model = "openai/clip-vit-base-patch32"

@@ -1,0 +1,3 @@
+{"_id":"doc_python","title":"Python Runtime","text":"Python 3.12 supports modern typing features and performance improvements."}
+{"_id":"doc_gpu","title":"GPU Setup","text":"CUDA-enabled PyTorch can use a compatible NVIDIA GPU for tensor operations."}
+{"_id":"doc_retrieval","title":"Search Evaluation","text":"Information retrieval experiments compare ranked results with relevance judgments."}

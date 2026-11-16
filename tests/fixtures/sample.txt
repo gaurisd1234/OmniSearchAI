@@ -1,0 +1,2 @@
+OmniSearch AI sample text.
+This fixture exercises UTF-8 text extraction and line normalization.

@@ -1,0 +1,12 @@
+{"query":"what is BM25","relevant_document_ids":["doc-bm25"],"split":"train"}
+{"query":"how does sparse term scoring work","relevant_document_ids":["doc-bm25"],"split":"train"}
+{"query":"meaning based vector search","relevant_document_ids":["doc-semantic"],"split":"train"}
+{"query":"find similar sentences","relevant_document_ids":["doc-semantic"],"split":"train"}
+{"query":"GPU hardware acceleration","relevant_document_ids":["doc-gpu"],"split":"train"}
+{"query":"Nvidia CUDA compute","relevant_document_ids":["doc-gpu"],"split":"train"}
+{"query":"probabilistic word matching","relevant_document_ids":["doc-bm25"],"split":"validation"}
+{"query":"search by sentence meaning","relevant_document_ids":["doc-semantic"],"split":"validation"}
+{"query":"graphics card compute","relevant_document_ids":["doc-gpu"],"split":"validation"}
+{"query":"rank by matching query terms","relevant_document_ids":["doc-bm25"],"split":"test"}
+{"query":"find concepts with close meaning","relevant_document_ids":["doc-semantic"],"split":"test"}
+{"query":"NVIDIA tensor processing","relevant_document_ids":["doc-gpu"],"split":"test"}
